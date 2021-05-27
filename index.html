@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src= "js/nasaPicBackend.js"></script>
+    <title>NASA Picture Of The Day</title>
+    
+    <style>
+        #imgURL {  
+            display: block;  
+            margin-left: auto;  
+            margin-right: auto;  
+        }   
+        #body {
+            background-color:powderblue;
+        }
+    </style>
+</head>
+<body id = "body">
+    <h1 style="background-color:lightblue"> NASA Picture Of The Day</h1>
+    <button onclick="revealMessage()">Get Picture</button>
+    <div id = "hiddenMessage" style="display:none">
+        <p id = "title"> </p>
+        <p id = "date"></p>
+        <img id = "imgURL" src = "" width="400" height="400">
+        <button onclick="revealDescription()">Picture Description</button>
+        <div id = "hiddenDesc" style = "display:none">
+            <p id = "desc"></p>
+        </div>
+    </div>
+
+    <div id = "creditNASA">
+        <h4> All images are sourced by the NASA API </h4>
+
+    </div>
+   
+</body>
+</html>
